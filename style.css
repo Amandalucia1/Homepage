@@ -12,21 +12,30 @@
     --roboto:'Roboto', sans-serif;
     --poppins:'Poppins', sans-serif;
   }
+  /* Remover ‘X’ do Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
 img{
  
     max-width: 100%;
 }
-.rocho{
+.background{
     
     background: var(--purple-bg);
-    padding: 25px;
+    padding: 30px;
 
 }
 header{
     display: flex;
-    padding: 30px;
-    gap: 56px;
-    justify-content: space-around;
+    padding: 20px;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
     
 }
 ul{
@@ -36,38 +45,75 @@ ul{
 li{
     display: inline-block;
     list-style: none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem; 
 
     
 }
 nav a{
     text-transform: capitalize;
     color: var(--white);
+    position: relative;
 }
 
 a{
     text-decoration: none;
     color: var(--button-bg);
     font-size: 1.2rem;
-}
-#b::before{
-    content: "";
-    display: inline-block;
+}    
+
     
+#b::before{
+    position: absolute;
+    left: -5px;
+    content: "";
+    display: block;
     background-color: var(--green);
     width: 3px;
-    height: 15px;
+    height: 20px;
+    
+}
+
+li:hover{
+   
+    background-color: rgba(173, 68, 173, 0.815);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem; 
 }
 form{
     display: flex;
 }
-.barra{
-    background-color: var(--dark-bg);
-    border: none;
-    padding-left: 15px;
-}
-.busca{
-    background-color: var(--button-bg);
+#barra {
+    background-color: #170027;
     padding: 2px 10px;
+    color: #FBF6FF;
+    border: none;
+    outline: none;
+}
+#barra::placeholder{
+    color: var(--white);
+}
+.form button{
+    background-color: var(--button-bg);
+    padding: 2px 15px;
+    height: 40px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: #9e6df5;
+}
+
+.icon-lupa{
+    background-image: url(./images/search.svg);
+   background-repeat: no-repeat;
+   display: block;
+   width: 25px;
+   height: 25px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -81,10 +127,11 @@ h1{
 }
 .grid1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    gap: 40px;
-    padding: 30px;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px;
+    padding: 20px 0;
+    max-width: 1000px;
+    margin: auto;
     
 }
 .grid2 p{
@@ -96,14 +143,20 @@ p{
     max-width: 65ch;
     line-height: 1.4;
 }
-.centro{
-    max-width: 950px;
-    margin: auto;
-}
+
 
 .grid2{
     display: grid;
     align-items: center;
+}
+#button-ver:hover{
+    background-color: rgba(173, 68, 173, 0.815);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+}
+#thumbnail-cursor{
+    cursor: pointer;
 }
 .flex2{
     display: flex;
@@ -123,17 +176,14 @@ h2{
 #filho1, #filho2{
    grid-column: 2;
 }
-.mudei{
-  padding-bottom: 40px;   
-}
-.grid3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    padding: 30px;   
-}
+.pad{
+    padding-bottom: 40px;   
+  }
+
 .flex3{
     display: flex;
     gap: 20px;
     padding: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
