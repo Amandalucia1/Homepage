@@ -26,15 +26,15 @@ img{
 .background{
     
     background: var(--purple-bg);
-    padding: 30px;
+    padding: 25px;
 
 }
 header{
     display: flex;
-    padding: 20px;
+    padding-top: 15px;
     gap: 30px;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     
 }
@@ -130,7 +130,7 @@ h1{
     grid-template-columns: 1fr 1fr; 
     gap: 50px;
     padding: 20px 0;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     
 }
@@ -143,11 +143,15 @@ p{
     max-width: 65ch;
     line-height: 1.4;
 }
-
-
 .grid2{
     display: grid;
     align-items: center;
+}
+#button-ver{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+
 }
 #button-ver:hover{
     background-color: rgba(173, 68, 173, 0.815);
@@ -184,6 +188,6 @@ h2{
     display: flex;
     gap: 20px;
     padding: 30px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
