@@ -21,8 +21,9 @@
 
 
 
-    <div class="background">
-        <header class="flex1">
+
+    <header class="background">
+        <div class="flex1 container">
             <img src="./images/logo.svg" alt="logo">
             <nav aria-label="primária">
                 <ul>
@@ -39,29 +40,30 @@
                     <button type="submit" aria-label="faça sua busca"><span class="icon-lupa"></span></button>
                 </form>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
 
-    <main class="background">
-        
-            <article class="grid1" aria-labelledby="label-objetivo" >
+    <main>
+
+        <article class="background" aria-labelledby="label-objetivo">
+            <div class="grid1 container">
                 <div class="grid2">
                     <h1 id="label-objetivo">Veja o guia definitivo para transformar seus objetivos como dev em 2022</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus vero
+                    <p class="container-space">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus vero
                         optio recusandae minus sequi blanditiis.
                     </p>
                     <div class="flex2">
-                        <a id="button-ver" href="/">Veja mais</a>
-                        <img  id="thumbnail-cursor" src="./images/arrow-right.svg" alt="flecha">
+                        <a id="link" href="/">Veja mais</a>
+                        <img id="thumbnail-cursor" src="./images/arrow-right.svg" alt="flecha">
                     </div>
                 </div>
                 <div><img src="./images/featured-image.png" alt="Códigos"></div>
-            </article>
-    </main>
+            </div>
+        </article>
 
         <hr>
 
-        <section class="grid1">
+        <section class="grid1 container">
             <article aria-labelledby="label-objetivo">
 
                 <img src="./images/post-1.png" alt="computador">
@@ -92,37 +94,37 @@
             </div>
         </section>
 
-        <section class="flex3">
-            <article aria-labelledby="label-vaga desejada">
-                <img src="./images/post-2.png" alt="Homem com laptop">
-                <p>Janeiro 04, 2022</p>
-                <h2 id="label-desejadao">10 dicas para conseguir a vaga desejada</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem maxime
-                    necessitatibus
-                    praesentium voluptates!</p>
-            </article>
+        <div class="container-margin">
+            <section class="flex3 container">
+                <article aria-labelledby="label-vaga desejada">
+                    <img src="./images/post-2.png" alt="Homem com laptop">
+                    <p>Janeiro 04, 2022</p>
+                    <h2 id="label-desejadao">10 dicas para conseguir a vaga desejada</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem maxime
+                        necessitatibus
+                        praesentium voluptates!</p>
+                </article>
+                <article aria-labelledby="label-codigo">
+                    <img src="./images/post-3.png" alt="Códigos no laptop">
+                    <p>Janeiro 04, 2022</p>
+                    <h2 id="label-codigo">Deixe seu código mais semântico com essas dicas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur veritatis veniam
+                        consectetur nihil, adipisci.</p>
+                </article>
+                <article aria-labelledby="label-aplicativo">
+                    <img src="./images/post-4.png" alt="Celular">
+                    <p>Janeiro 04, 2022</p>
+                    <h2 id="label-mobile">Use essas dicas nas suas aplicações mobile</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint, mollitia magnam, nesciunt enim
+                        odio
+                        voluptas architecto.</p>
+                </article>
+            </section>
+        </div>
 
-            <article aria-labelledby="label-codigo">
-                <img src="./images/post-3.png" alt="Códigos no laptop">
-                <p>Janeiro 04, 2022</p>
-                <h2 id="label-codigo">Deixe seu código mais semântico com essas dicas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur veritatis veniam
-                    consectetur nihil, adipisci.</p>
-            </article>
-
-            <article aria-labelledby="label-aplicativo">
-                <img src="./images/post-4.png" alt="Celular">
-                <p>Janeiro 04, 2022</p>
-                <h2 id="label-mobile">Use essas dicas nas suas aplicações mobile</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sint, mollitia magnam, nesciunt enim
-                    odio
-                    voluptas architecto.</p>
-            </article>
-        </section>
+    </main>
 
 
-
-   
 
 
 </body>
