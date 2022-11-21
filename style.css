@@ -177,61 +177,61 @@ h2{
     padding: 30px auto;
 }
 
-@media(max-width: 900px){
-    h1{
-        font-size: 1.8rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    h2{
-        font-size: 1.4rem;
-    }
-    a{
-        font-size: 1.1rem;
-    }
-    .container-space{
-        margin: 15px 0;
-    }
-    .flex3{
-        gap: 12px;
-    }
+    @media(max-width: 900px){
+        h1{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        h2{
+            font-size: 1.4rem;
+        }
+        a{
+            font-size: 1.1rem;
+        }
+        .container-space{
+            margin: 15px 0;
+        }
+        .flex3{
+            gap: 12px;
+        }
     
-}
-@media (max-width: 769px){
-    .flex1, .flex3{
-        flex-direction: column;
-        align-items: center;
-        
     }
-    .grid1{
-        gap: 30px;
-        grid-template-columns: 1fr;
-    }
-    .container{
-        max-width: 500px;
+    @media (max-width: 769px){
+        .flex1, .flex3{
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .grid1{
+            gap: 30px;
+            grid-template-columns: 1fr;
+        }
+        .container{
+            max-width: 500px;
+            margin: auto;
+        }
+        h1,p,h2{
+        text-align: center; 
+        }
+        .flex2{
+        justify-content: center;
+        }
+        .flex3 img{
         margin: auto;
-    }
-    h1,p,h2{
-       text-align: center; 
-    }
-    .flex2{
-      justify-content: center;
-    }
-    .flex3 img{
-      margin: auto;
-    }
-    main .background {
-        padding: 10px 0 25px 0;
+        }
+        main .background {
+            padding: 10px 0 25px 0;
 
+        }
+        hr{
+            margin-bottom: 30px;
+        }
+        .pad{
+            padding-bottom: 30px;
+        }
+        .flex3{
+            gap: 30px;
+        }
     }
-    hr{
-        margin-bottom: 30px;
-    }
-    .pad{
-        padding-bottom: 30px;
-    }
-    .flex3{
-        gap: 30px;
-    }
-}
